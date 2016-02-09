@@ -3,27 +3,27 @@
   "title": "newsquiz",
   "description": "Creates a quiz from a google spreadsheet.",
   "version": "0.1.0",
-  "homepage": "https://github.com/motherjones/newsquiz",
+  "homepage": "https://github.com/tanmay206/tanmay206.github.io",
   "author": {
-    "name": "Ben Breedlove",
-    "email": "benbreedlove@gmail.com",
-    "url": "http://www.motherjones.com/"
+    "name": "",
+    "email": "",
+    "url": ""
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/motherjones/newsquiz.git"
+    "url": "git://github.com/tanmay206/tanmay206.github.io"
   },
   "bugs": {
-    "url": "https://github.com/motherjones/newsquiz/issues"
+    "url": "https://github.com/tanmay206/tanmay206.github.io/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/motherjones/newsquiz/blob/master/LICENSE-MIT"
+      "url": ""
     },
     {
       "type": "GPL",
-      "url": "https://github.com/motherjones/newsquiz/blob/master/LICENSE-GPL"
+      "url": ""
     }
   ],
   "dependencies": {

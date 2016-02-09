@@ -33,7 +33,7 @@
         var ret = [];
         for (var i = 0; i <= nQuestions; i++) {
             ret.push(score(i, nQuestions));
-        }
+                           }
         return ret;
     }
 
@@ -370,6 +370,7 @@
                             //push right answer
                             possible_answers.push(possible_right_answers[right_answers_placed]);
                             right_answers_placed++;
+
                         }
                         if (j === possible_wrong_answers.length) {
                             continue;
@@ -433,10 +434,10 @@
                     question_index + '"></ul>');
 
                 function bindClick(question_index, answer_index, possible_answer) {
+
                     possible_answer.bind('click', function() {
                         // was it the right answer?
                         var was_correct = self.quiz_data[question_index].possible_answers[answer_index].correct;
-
                         // Add correct classes to possible answers
                         answers_container.find('.selected').removeClass('selected');
                         $(this).addClass('selected');
@@ -455,6 +456,10 @@
                                 'first_guess_' +
                                 (was_correct ? 'right' : 'wrong')
                             );
+                        }
+
+                        if (was_correct == true) {
+                            favcytest()
                         }
                         self.update_how_you_did_element();
 
