@@ -19,10 +19,10 @@
         crossDomain:true,
         callBack : "?",
         success: function (data) {
-            alert(JSON.stringify(data));
+            console.log(JSON.stringify(data));
           },
           error: function (data) {
-            alert(JSON.stringify(data));
+            console.log(JSON.stringify(data));
           },
         }).done(function (data) {
           console.log(data);
