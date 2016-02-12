@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WhereToPark</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="css/jumbotron-narrow.css" rel="stylesheet"/>
+
+	<link href="css/index_css.css" rel="stylesheet">
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+	<link rel="shortcut icon" href="images/wtp.ico" type="image/x-icon" >
+  <script src="js/index.js"></script>
+  </head>
+
+  <body >
+
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '112970469074674',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  <div class="container">
+        <div class="jumbotron" style="background-color:white"  >
+		<img class="img" src="images/wtp1.jpg" height="30%"; width="30%" alt="WhereToPark"/>
+		<h2 style="color:#984807"><strong>WhereToPark</strong></h2>
+
+		<h5 style="color:red"><i><strong>Better Parking, Better Convenience</strong></i></h5>
+		<h4>Please select your pickup point:</h4>
+<div>
+
+
+        <p><a class="btn  btn-block  btn-primary"  data-toggle="modal" data-target="#myModalHorizontal1">Building 10 Tower A</a></p>
+        <p><a class="btn  btn-block  btn-primary"  data-toggle="modal" data-target="#myModalHorizontal2">Building 10 Tower B</a></p>
+        <p><a class="btn  btn-block  btn-primary"  data-toggle="modal" data-target="#myModalHorizontal3">Building 10 Tower C</a></p>
+      
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal1" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Booking details - Your car's safety is our top priority.
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. John Smith"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Company Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. WhereToPark"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Car No.</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="5" class="form-control"
+                            id="inputPassword3" placeholder="Eg. 9253"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Mobile</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="10" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 0123456789"/>
+                    </div>
+                  </div>
+				   <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Pick up time</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 1035"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Create your 4 digit Code</label>
+                    <div class="col-sm-10">
+                        <input type="text" maxlength= "4" class="form-control" 
+                        id="inputEmail3" placeholder="Kindly verify the valet with your own unique code."/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal2" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Booking details
+                </h4>
+            </div>
+            
+             <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. John Smith"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Company Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. WhereToPark"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Car No.</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="5" class="form-control"
+                            id="inputPassword3" placeholder="Eg. 9253"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Mobile</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="10" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 0123456789"/>
+                    </div>
+                  </div>
+				   <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Pick up time</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 1035"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Create your 4 digit Code</label>
+                    <div class="col-sm-10">
+                        <input type="text" maxlength= "4" class="form-control" 
+                        id="inputEmail3" placeholder="Kindly verify the valet with your own unique code."/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal3" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Booking details
+                </h4>
+            </div>
+            
+             <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. John Smith"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Company Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. WhereToPark"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label"
+                          for="inputPassword3" >Car No.</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="5" class="form-control"
+                            id="inputPassword3" placeholder="Eg. 9253"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Mobile</label>
+                    <div class="col-sm-10">
+                        <input type="number" maxlength="10" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 0123456789"/>
+                    </div>
+                  </div>
+				   <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Pick up time</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" 
+                        id="inputEmail3" placeholder="Eg. 1035"/>
+                    </div>
+                  </div>
+				  <div class="form-group">
+                    <label  class="col-sm-2 control-label"
+                              for="inputEmail3">Create your 4 digit Code</label>
+                    <div class="col-sm-10">
+                        <input type="text" maxlength= "4" class="form-control" 
+                        id="inputEmail3" placeholder="Kindly verify the valet with your own unique code."/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<br/><br/>
+		<div>
+
+		<p style="font-size:100%" "text-align:center" "font-weight:bold"> Mail Us: <a href="mailto:hello@wheretopark.xyz">hello@wheretopark.xyz</a> <p>
+<p style="font-size:100%" "text-align:center" "font-weight:bold"> Call Us: <a href="tel:91-9971-486-796">+919971486796</a> <p>
+
+
+      </div>
+
+       <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-71093046-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+      <footer class="footer">
+
+    <p style="font-size:80%">&copy; 2016 Dream Manor Navigation Private Limited</p>
+
+      </footer>
+
+    </div> <!-- /container -->
+
+
+
+  </body>
+</html>
